@@ -14,7 +14,7 @@ Time complexity: Overall is O(1). All process can be done with single run such a
 - (2) To set value is O(1)
 
 Space complexity:
-depend on "capacity", which is defined by user.
+O(n) which n is number of value and it is limited by "capacity", which is defined by user. Value is integer. 1 integer = 4 bytes. Therefore, the estimation of space complexity is 4*n bytes.
 
 -------------
 
@@ -28,7 +28,8 @@ Recusion is used to implemented find_file function because it has capability to 
 Time complexity: O(n) because it depends on number of file and level of directory to go through. 
 - O(n), n is number of files and level of directory.
 
-Space complexity: depend on number of files in the considered directory
+Space complexity: 
+O(n) which n is number of files and directory in the considered directory. Files and directory are recorded as string. 1 character = 1 byte. Therefore, space complexity is estimated to 1*characters bytes.
 
 -----------
 
@@ -49,7 +50,7 @@ Time complexity: Overall, the time complexity is O(n), which n is number of node
 - (7) huffman_decoding() is O(n) from while-loop.
 
 Space complexity:
-depend on number of string of text.
+O(n) which n is number of string of text. 1 character = 1 byte. Therefore, space complexity is estimated to 1*characters bytes.
 
 ------------
 
@@ -64,7 +65,8 @@ Time complexity: Overall, the time complexity is O(1) and O(n), which n is numbe
 - O(1) when to add user or group.
 - O(n) because it depends on number of group. and users.
 
-Space complexity: depend on number of user and group.
+Space complexity: 
+O(n) which n is number of user and group. User and Group are string. 1 character = 1 byte. Therefore, space complexity is estimated to 1*characters bytes.
 
 -------------
 
@@ -75,8 +77,11 @@ Linked list is chosen to implement to build blockchain. It provides ability to s
 
 #### 2.Efficiancy:
 
-Time complexity: O(1) when to add new block.
-Space complexity: depend on number of block.
+Time complexity: Overall time complexity is O(n).
+- O(1) when to add new block.
+- O(n) for Hash function, which n is number of element in Hash table.
+
+Space complexity: O(2*n) which n is number of block and element in Hash table. Block is string. Element in Hash table is integer. Therefore, space complexity is estimated to 1*characters + 4*elements bytes (1 character = 1 bytes, 1 integer = 4 bytes).
 
 -------------
 
@@ -93,7 +98,7 @@ Time complexity: Overall time complexity is O(n) + O(n log n), which n is number
 - (2) union is O(n) + O(n log n). O(n log n) is from union, O(n) is from loop ton convert from list to Node list.
 - (3) intersection is O(n) + O(n log n). O(n log n) is from intersect, O(n) is from loop ton convert from list to Node list.
 
-Space complexity: depend on number of node.
+Space complexity: O(n) which n is number of node. Node is integer. Therefore, space complexity is estimated to 4*n bytes (1 integer = 4 bytes). 
 
 
 
